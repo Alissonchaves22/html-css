@@ -1,0 +1,37 @@
+div{
+  text-align: center;
+  background-color: white;
+  
+  color: black;
+  display: inline;
+}
+
+a{
+  text-decoration: none;
+  color: black
+}
+
+a:hover{
+  background-color: antiquewhite;
+  text-decoration: underline;
+}
+
+a:visited{
+  color: rebeccapurple;
+}
+
+a:active{
+  color: green;
+}
+
+a::after{
+  content: '========';
+}
+
+a::before{
+  content: '========';
+}
+
+
+
+

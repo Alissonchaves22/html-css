@@ -1,0 +1,15 @@
+.botao{
+    width: 150px;
+    height: 100px;
+    margin: 5px;
+    background-color: whitesmoke;
+}
+
+.botao:hover{
+    background-color: aquamarine;
+   font-weight: bold;
+}
+
+p{
+    font-size: 25px;
+}

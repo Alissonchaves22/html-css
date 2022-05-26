@@ -1,0 +1,14 @@
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  text-decoration: underline;
+  color: rgb(211, 135, 12);
+}
+
+a:visited{
+  color: rgb(62, 135, 168);
+  
+}

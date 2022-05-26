@@ -1,0 +1,11 @@
+C:\Users\Geral\Documents\html-css\projetoNobo\bin\Debug\netcoreapp3.1\projetoNobo.exe
+C:\Users\Geral\Documents\html-css\projetoNobo\bin\Debug\netcoreapp3.1\projetoNobo.deps.json
+C:\Users\Geral\Documents\html-css\projetoNobo\bin\Debug\netcoreapp3.1\projetoNobo.runtimeconfig.json
+C:\Users\Geral\Documents\html-css\projetoNobo\bin\Debug\netcoreapp3.1\projetoNobo.runtimeconfig.dev.json
+C:\Users\Geral\Documents\html-css\projetoNobo\bin\Debug\netcoreapp3.1\projetoNobo.dll
+C:\Users\Geral\Documents\html-css\projetoNobo\bin\Debug\netcoreapp3.1\projetoNobo.pdb
+C:\Users\Geral\Documents\html-css\projetoNobo\obj\Debug\netcoreapp3.1\projetoNobo.csprojAssemblyReference.cache
+C:\Users\Geral\Documents\html-css\projetoNobo\obj\Debug\netcoreapp3.1\projetoNobo.AssemblyInfoInputs.cache
+C:\Users\Geral\Documents\html-css\projetoNobo\obj\Debug\netcoreapp3.1\projetoNobo.AssemblyInfo.cs
+C:\Users\Geral\Documents\html-css\projetoNobo\obj\Debug\netcoreapp3.1\projetoNobo.dll
+C:\Users\Geral\Documents\html-css\projetoNobo\obj\Debug\netcoreapp3.1\projetoNobo.pdb

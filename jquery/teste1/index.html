@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="teste">Aprendendo Jquery</h1>
+    <h1 class="teste">Aprendendo Jquery</h1>
+    <h1 class="teste">Aprendendo Jquery</h1>
+    <h1 id="num">0</h1>
+    <button id="mudar">Mudar para verde</button>
+    <p id='texto'>Mudar a cor do fundo</p>
+
+    <button id="botao">Clicar</button>
+
+    <button id="botao1">Clique</button>
+
+    <p id="box">texto</p>
+
+    <img src="https://www.w3schools.com/js/pic_bulboff.gif" alt="Luz apagada" id="imgse">
+    
+    <button id="acender">Acender</button>
+    <button id="Apagar" style="display:none;">Apagar</button>
+
+    <script>
+       $("#acender").click(function() {
+           $('#imgse').attr('src', 'https://www.w3schools.com/js/pic_bulbon.gif')
+           $('#acender').hide()
+           $('#Apagar').show()           
+       })
+       $('#Apagar').click(function() {
+           $('#imgse').attr('src', 'https://www.w3schools.com/js/pic_bulboff.gif')
+           $('#Apagar').hide()
+           $('#acender').show()
+
+       })
+       
+       
+       
+       var num;
+       num = 0
+       $(document).ready(function(){
+        $("h1.teste").text("Combinando seletores!");});
+        
+        
+       $("#botao").click(function(){
+        num += 1
+        $("#num").text(num)
+        })
+       $("#mudar").click(function(){
+           $("#texto").css({
+               'color':'green', 'background':'red'
+           });
+       });
+
+       var box = $( "#box" );
+        $( "#botao1" ).on( "click", function() {
+        alert('Deu certo')
+        $('#box').text('Deu certo')
+        box.show();
+        });
+
+
+        
+        
+    </script>
+</body>
+</html>

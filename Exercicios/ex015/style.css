@@ -1,0 +1,24 @@
+h1{
+    background-color: aquamarine;
+    transition-duration: 5s;
+}
+
+h2{
+    background-color: brown;
+    transition-duration: 5s;
+}
+
+p{
+    text-transform: uppercase;
+    
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+}

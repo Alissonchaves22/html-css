@@ -1,0 +1,30 @@
+.centro{
+    display: flex;
+    justify-content: center;
+}
+img{
+   margin: 4px;
+}
+body{
+   background-color: rgb(95, 48, 48);
+}
+h1{
+   text-align: center;
+   color: blanchedalmond;
+   font-size: 40px
+}
+
+p{
+    color: blanchedalmond;
+    font-size: 30px;
+    text-align: center;
+}
+
+a{
+   text-decoration: none;
+}
+
+a:hover{
+   text-decoration: underline;
+   color: rgb(119, 92, 92);
+}

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Indie+Flower&display=swap');
+
+
+.container{
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.main{
+  display: block;
+  background-color: #7373E1;
+  width: 50em;
+  padding: 1em;
+  border-radius: 1em;
+  box-shadow: 0.10em 0.10em 0.05em #2F2F5C;
+  font-family: 'Balsamiq Sans', 'Arial';
+  
+}
+
+h1{
+  text-align: center;
+  color: #2323A8;
+}
+
+ul{
+  display: flex;
+  justify-content: center;
+  
+}
+
+li{
+  margin-left: 3em;
+  list-style: none;
+  color: #13135C;
+  font-weight: bold;
+  
+  
+}
+
+p{
+  margin: auto;
+  color: #13135C;
+}
+
+a{
+  text-decoration: none;
+  text-align: center;
+}
+
+

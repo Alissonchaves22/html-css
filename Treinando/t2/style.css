@@ -1,0 +1,26 @@
+body{
+  box-sizing: border-box;
+  margin:0;
+}
+.h1{
+  display: flex;
+  margin: 0px;
+  height: 3.12em;
+  background-color: #2F55A4;
+  margin-bottom: 2em;
+}
+
+.cont1{
+  display: flex;
+ 
+  padding: 0.5em;
+  
+}
+
+.h2{
+  width: 12em;
+  height: 56em;
+  border-radius: 0.5em;
+  border: 1px solid black;
+}
+

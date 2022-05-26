@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.es.gov.br/scripts/jquery/1.11.2/jquery-1.11.2.min.js"></script>
+    <script src="https://cdn.es.gov.br/scripts/jquery/jquery-cookie/1.3.1/jquery.cookie.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post" id="form1" name="form1">
+        <p>RGM:
+            <input name="rgm" id="rgm" size="10" type="text">
+        </p>
+
+        <p>Nome:
+            <input name="nome" id="nome" size="60" type="text">
+        </p>
+
+        <p>Profissão:
+            <input name="profissao" id="profissao" size="45" type="text">
+        </p>
+              
+        <p>
+            CPF:
+            <input name="cpf" id="cpf" size="20" type="text">
+        </p>
+
+        <p>
+            <input type="button" name="button" id="button1" value="Gravar Cookies">
+            <input type="button" name="button2" id="button2" value="Carregar Cookies">
+            <input type="button" name="button3" id="button3" value="Eliminar Cookies">
+        </p>
+    
+    
+    </form>
+    
+    <script>
+          function limparCampos(){
+            $('#rgm').val('');
+            $('#nome').val('');
+            $('#profissao').val('');
+            $('#cpf').val('');
+
+          }
+          
+          $(function(){
+              $('#button1').click(gravarCookie);
+              $('#button2').click(carregarCookie);
+              $('#button3').click(function(){
+                  apagarCookie();
+              });
+          });
+
+          function gravarCookie(){
+              $.cookie('rgm', $('#rgm'). val(), {expires: 5});
+              $.cookie('nome', $('#nome'). val(), {expires: 5});
+              $.cookie('profissao', $('#profissao'). val(), {expires: 5});
+              $.cookie('cpf', $('#cpf'). val(), {expires:5});
+              alert('Dados Gravados')
+              limparCampos()
+
+          }
+
+          function carregarCookie(){
+              
+              if ($.cookie("rgm") != null){
+                  $("#rgm").val($.cookie("rgm"));
+                  $("#profissao").val($.cookie("profissao"));
+                  $("#nome").val($.cookie("nome"));
+                  $("#cpf").val($.cookie("cpf"));
+                  alert('Dados carregados')
+
+              }
+
+              else{
+                  alert('nenhum cookie encontrado');
+              }
+          }
+
+          function apagarCookie(){
+              if ($.cookie('rgm') != null){
+                  $.removeCookie('rgm');
+                  $.removeCookie('profissao');
+                  $.removeCookie('nome');
+                  $.removeCookie('cpf');
+              }
+
+              else{
+                  alert('Nenhum cookie encontrado');
+              }
+              limparCampos();
+          }     
+        
+        
+        
+        
+        //Gravar um cookie
+        //$.cookie('nomedocookie', 'valordocookie');
+        //Para definir um prazo de expiração(10 dias de exemplo)
+        //$.cookie('nomedocookie', 'valordocookie', {expires:10});
+        //Para recuperar os dados do cookie
+        //$.cookie('nomedocookie')
+        //Para apagar um cookie
+        //$.removeCookie('nomedocookie', null)
+    </script>
+</body>
+</html>

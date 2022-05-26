@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="pagina.js"></script>
+    
+    <title>Ajax fácil</title>
+    <script>
+               
+        $.ajax({
+            url: 'aula01.php',
+            type: 'post',
+            data: {
+                nome: 'Daniel',
+                idade: 19,
+                endereco: 'Rua Lobato, Cobilandia'
+        },
+        success: function(resposta){
+        window.alert('Deu certo');
+        
+        },
+        error: function(erro){
+        window.alert('Erro: ' + erro);
+ }
+        })
+    </script>
+</head>
+<body>
+</body>       
+</html>
